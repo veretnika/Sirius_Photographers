@@ -1,9 +1,10 @@
 from django.shortcuts import render
-
-from django.http import HttpResponse
+# from .models import Task
+# from django.http import HttpResponse
 
 
 def index(request):
+    # tasks = Task.objects.all()
     return render(request, 'personalArea/index.html')
 
 

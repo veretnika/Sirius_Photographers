@@ -9,7 +9,6 @@ urlpatterns = [
     path('donation', views.donation, name='donation'),
     # path('about-a', views.about)
 
-#     доп страница
 
 
 ]
