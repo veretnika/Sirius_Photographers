@@ -7,8 +7,8 @@ urlpatterns = [
     path('', include("main.urls")),
     path('personalArea', include("personalArea.urls"))
 
-#     потом закоментить
-#     path('', include("main.urls"))
+
+
 
 
 
