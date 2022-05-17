@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 urlpatterns = [
     path('', views.index, name='home'),
@@ -9,6 +9,7 @@ urlpatterns = [
     path('donation', views.donation, name='donation'),
     # path('about-a', views.about)
 
-
+    #path к REST-ARI
+    path('', include('rest.urls'))
 
 ]

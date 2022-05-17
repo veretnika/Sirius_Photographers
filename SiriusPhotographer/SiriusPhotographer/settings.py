@@ -13,6 +13,8 @@ import os
 import psycopg2.extensions
 from pathlib import Path
 from dotenv import load_dotenv
+#REST-API
+import rest_framework
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    #REST-API
+    'rest.apps.RestConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
